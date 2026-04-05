@@ -131,7 +131,7 @@ Install Ollama from: https://ollama.com/
 
 Pull a model:
 
-    ollama pull llama3.2
+    ollama pull llama3.1:latest
 
 ---
 
@@ -140,54 +140,3 @@ Pull a model:
     streamlit run app.py
 
 ---
-
-## Example Usage
-
-1. Upload a document (PDF, DOCX, TXT)
-2. Ask a question such as:
-   - "What is the main topic of this document?"
-3. The system:
-   - retrieves relevant chunks
-   - sends them to the LLM
-   - generates an answer with context
-
----
-
-## Why RAG
-
-Traditional LLMs:
-- No access to your documents
-- Can produce incorrect or hallucinated answers
-
-RAG systems:
-- Ground responses in your data
-- Improve accuracy
-- Allow custom knowledge integration
-
----
-
-## Possible Improvements
-
-- Hybrid search (keyword + vector)
-- Reranking retrieved chunks
-- Caching frequently asked questions
-- Multi-document comparison
-- Evaluation metrics (precision and recall)
-- Improved UI/UX
-
----
-
-## Learning Takeaways
-
-This project demonstrates:
-
-- How LLMs can be combined with external knowledge
-- How embeddings represent semantic meaning
-- How vector databases enable efficient retrieval
-- How to build a full-stack AI application locally
-
----
-
-## Author
-
-Kai Zhang
